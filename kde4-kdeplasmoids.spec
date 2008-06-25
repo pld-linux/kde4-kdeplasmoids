@@ -58,3 +58,22 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%attr(755,root,root) %{_libdir}/kde4/krunner_*.so
+%attr(755,root,root) %{_libdir}/kde4/plasma_applet_*.so
+%attr(755,root,root) %{_libdir}/kde4/plasma_comic_*.so
+%attr(755,root,root) %{_libdir}/kde4/plasma_engine_*.so
+%attr(755,root,root) %ghost %{_libdir}/libplasmaappletdialog.so.?
+%attr(755,root,root) %{_libdir}/libplasmaappletdialog.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libplasmacomicprovidercore.so.?
+%attr(755,root,root) %{_libdir}/libplasmacomicprovidercore.so.*.*.*
+%{_datadir}/apps/desktoptheme/Aya
+%{_datadir}/apps/desktoptheme/Elegance
+%{_datadir}/apps/desktoptheme/Silicon
+%{_datadir}/apps/desktoptheme/default/widgets/*
+%{_datadir}/apps/desktoptheme/heron
+%{_datadir}/apps/desktoptheme/slim-glow
+%{_datadir}/apps/plasma-bluemarble
+%{_datadir}/apps/plasma-comic
+%{_datadir}/kde4/services/*.desktop
+%{_datadir}/kde4/servicetypes/plasma_comicprovider.desktop
+%{_iconsdir}/hicolor/scalable/apps/fifteenpuzzle.svgz
