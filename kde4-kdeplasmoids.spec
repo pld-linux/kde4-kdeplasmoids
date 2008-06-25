@@ -12,7 +12,12 @@ Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
 # Source0-md5:	891de9131043c649de0e129d17581ef1
 BuildRequires:	QtCore-devel >= %{_qtver}
+BuildRequires:	automoc4 >= 0.9.83
 BuildRequires:	cmake
+BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
+BuildRequires:	kde4-kdelibs-devel >= %{version}
+BuildRequires:	kde4-kdepimlibs-devel >= %{version}
+BuildRequires:	phonon-devel >= 4.1.83
 BuildRequires:	qt4-build >= %{_qtver}
 BuildRequires:	qt4-qmake >= %{_qtver}
 BuildRequires:	rpmbuild(macros) >= 1.293
@@ -25,7 +30,7 @@ Kde4 plasmoids.
 Kde4 Plasmoids.
 
 %prep
-%setup -q
+%setup -q -n %{orgname}-%{version}
 
 %build
 install -d build
