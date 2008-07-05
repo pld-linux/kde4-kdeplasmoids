@@ -5,12 +5,12 @@
 Summary:	KDE4 Plasmoids
 Summary(pl.UTF-8):	KDE4 Plasmoids
 Name:		kde4-kdeplasmoids
-Version:	4.0.83
+Version:	4.0.85
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	891de9131043c649de0e129d17581ef1
+# Source0-md5:	55a830e92d0acb2bfbedf6895b743978
 BuildRequires:	QtCore-devel >= %{_qtver}
 BuildRequires:	automoc4 >= 0.9.83
 BuildRequires:	cmake
